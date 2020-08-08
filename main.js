@@ -12,3 +12,7 @@ newEl.innerHTML = `
 newEl.classList.add("overlay");
 
 document.body.appendChild(newEl);
+
+function randomVisibility() {
+  return Math.random() < 0.5 ? "visibility: hidden" : "visibility: visible";
+}
