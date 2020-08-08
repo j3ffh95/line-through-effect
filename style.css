@@ -4,6 +4,7 @@
 
 body {
   background-color: #75bce6;
+  overflow: hidden;
 }
 
 h1 {
@@ -22,9 +23,16 @@ h1 {
   border-radius: 50px;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: -1vw;
   transform: translate(-50%);
   height: 3vh;
-  width: 10vw;
+  width: 0;
+  z-index: 2;
   animation: grow 3s linear forwards;
+}
+
+@keyframes grow {
+  to {
+    width: 205vw;
+  }
 }
