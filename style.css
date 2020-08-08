@@ -36,3 +36,7 @@ h1 {
     width: 205vw;
   }
 }
+
+.overlay {
+  z-index: 2;
+}
